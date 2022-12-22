@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Death by Gender</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS Imports -->
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/leaflet.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <link rel="icon" type="image/x-icon" href="Data/flag.ico" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="index.html">Cause of Death</a>
+      <a href="index_SEASON.html">Season</a>
+      <h1 id="title">Gender</h1>
+      <img id="gender" src="Data\gender.jpg" alt="Gender" width="224" height="128", style="display:block;">
+      <!-- <p id="description">Gender Text.</p>
+      <p id="description2">Gender Text 2.</p> -->
+      <canvas id="myChart" width="400" height="400"></canvas>
+      <img id="men" src="Data\men.jpg" alt="Men" width="224" height="128", style="display:none;">
+      <img id="women" src="Data\women.jpg" alt="Women" width="224" height="128", style="display:none;">
+      <img id="undeter" src="Data\undeter.jpg" alt="Undeter" width="224" height="128", style="display:none;">
+
+      <!--Chart-->
+      <div class="map" id="map"></div>
+      <!-- <div class='content'>
+           <div class="plot-content">
+             <canvas id="myChartBar"></canvas>
+           </div> -->
+
+      <!-- Legend -->
+      <div class="legend">
+        <h2> Genders </h2>
+          <button id="malesButton">Males</button>
+          <button id="femalesButton">Females</button>
+          <button id="undeterminedButton">Undetermined</button>
+      </div>
+      <p style="font-size: 20px; color:#1F9AFE;">
+      </p>
+      <!-- buttons -->
+      <div class="navButton">
+        <button id="previousButton" style="display: none;">previous</button>
+        <button id="nextButton">next</button>
+      </div>
+    </div>
+    <!-- <p id="credit">Austin L. Wheat: MUSA 611, Spring 2022 <br> University of Pennsylvania</p> -->
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="Data/azdeaths.js"></script>
+
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+
+    <script src="js/midtermFunctions_GENDER.js"></script>
+    <script src="js/slideModel_GENDER.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

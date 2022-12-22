@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Death by Season</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS Imports -->
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/leaflet.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <link rel="icon" type="image/x-icon" href="Data/flag.ico" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1 id="title">Season</h1>
+      <a href="index.html">Cause of Death</a>
+      <a href="index_GENDER.html">Gender</a>
+      <img id="season" src="Data\season.jpg" alt="Season" width="224" height="128", style="display:block;">
+      <!-- <p id="description">Season Text 1.</p>
+      <p id="description2">Season Text 2.</p> -->
+      <canvas id="myChart" width="400" height="400"></canvas>
+      <img id="summer" src="Data\summer.jpg" alt="Summer in the Sonoran Desert" width="224" height="128", style="display:none;">
+      <img id="autumn" src="Data\autumn.jpg" alt="Autumn in the Sonoran Desert" width="224" height="128", style="display:none;">
+      <img id="winter" src="Data\winter.jpg" alt="Winter in the Sonoran Desert" width="224" height="128", style="display:none;">
+      <img id="spring" src="Data\spring.jpg" alt="Spring in the Sonoran Desert" width="224" height="128", style="display:none;">
+
+      <!--Chart-->
+      <div class="map" id="map"></div>
+      <!-- <div class='content'>
+           <div class="plot-content">
+             <canvas id="myChartBar"></canvas>
+           </div> -->
+
+      <!-- Legend -->
+      <div class="legend">
+        <h2> Season of Year </h2>
+          <button id="summerButton">Summer</button>
+          <button id="autumnButton">Autumn</button>
+          <button id="winterButton">Winter</button>
+          <button id="springButton">Spring</button>
+      </div>
+      <p style="font-size: 20px; color:#1F9AFE;">
+      </p>
+      <!-- buttons -->
+      <div class="navButton">
+        <button id="previousButton" style="display: none;">previous</button>
+        <button id="nextButton">next</button>
+      </div>
+    </div>
+    <!-- <p id="credit">Austin L. Wheat: MUSA 611, Spring 2022 <br> University of Pennsylvania</p> -->
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="Data/azdeaths.js"></script>
+
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+
+    <script src="js/midtermFunctions_SEASON.js"></script>
+    <script src="js/slideModel_SEASON.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
