@@ -1,0 +1,254 @@
+body {
+    padding: 10px;
+    overflow: hidden;
+    font-family: colfax, helvetica, arial, sans-serif;
+}
+
+p.main {
+  font-size: 24px;
+}
+
+#credit{
+  position: absolute;
+    left: 0px;
+    width: 400px;
+    top: 90%;
+    bottom:0;
+    /* overflow-y: auto; */
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+button {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#exposureButton{
+  background-color: #F39972;
+}
+#skeletalButton{
+  background-color: #888888;
+}
+#bluntforceButton{
+  background-color: #B4C248;
+}
+#gunshotButton{
+  background-color:#661100;
+  /*cursor: not-allowed;*/
+}
+#malesButton{
+  background-color: #0362fa;
+}
+#femalesButton{
+  background-color: #fc53f1;
+}
+#undeterminedButton{
+  background-color: #b5b5b5;
+}
+#summerButton{
+  background-color: #d6cf36;
+}
+#autumnButton{
+  background-color: #e89c3c;
+}
+#winterButton{
+  background-color: #75c7f2;
+}
+#springButton{
+  background-color: #8baa43;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 400px;
+    height: 100%;
+    top: 0;
+}
+
+.sidebar {
+  position: relatve
+  left: 0px;
+  width: 400px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.legend{
+    position: relative;
+    left: 0px;
+    width: 400px;
+    top:60%;
+    overflow-y: auto;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.navButton{
+    position: relative;
+    left: 0px;
+    width: 400px;
+    top: 80%;
+    bottom:0;
+    overflow-y: auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.plot-section {
+  z-index: 1000;
+  background-color: #293330;
+  color:white;
+  padding: 1rem;
+  width: 60%;
+}
+
+.plot-content {
+  display: flex;
+  width: 0%;
+  height: 0%;
+
+}
+
+
+#myChartBars{
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+  color:white;
+  text-align: center;
+}
+
+
+.cell_3 {
+  width: 50%;
+  right: 5px;
+  position: relative;
+  top:2rem;
+  margin-right: 10px;
+  color:white;
+  text-align: center;
+}
+.cell_4 {
+  width: 50%;
+  right: 5px;
+  position: relative;
+  top: 2rem;
+  margin-right: 10px;
+  color:white;
+  text-align: center;}
+
+.info {
+  padding: 6px 8px;
+  position: relative;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/* Source mixins
+
+No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... }
+
+/* // Usage
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint */
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

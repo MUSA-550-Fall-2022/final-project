@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AZ Migrant Map</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS Imports -->
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/leaflet.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <link rel="icon" type="image/x-icon" href="Data/flag.ico" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+        - folium
+        </py-env>
+  </head>
+  <body>
+    <div class="map, id="m1">
+    <a href="heatmap.py"></a>
+    </div>
+    <div class="sidebar">
+
+      <a href="index_GENDER.html">Gender</a>
+      <a href="index_SEASON.html">Season</a>
+      <h1 id="title">Migrant Deaths on the Arizona/Sonora Border</h1>
+      <p id="description">Those who cross the border into the US often underestimate the danger that awaits them on the other side before they reach civilization. As this tool illustrates, many perish in the desert of southern Arizona with the American dream right at their fingertips.</p>
+      <p id="description2">This website provides insight into the individuals who lost their lives attempting to cross the border through the Sonoran Desert. Data includes recorded deaths from 1987 to 2022</p>
+      <canvas id="myChart" width="400" height="400"></canvas>
+      <img id="crossers" src="Data\crossers.jpg" alt="Migrants Crossing the Border" width="224" height="128", style="display:none;">
+      <img id="skull" src="Data\skull.jpg" alt="Migrants Crossing the Border" width="224" height="128", style="display:none;">
+      <img id="heat" src="Data\heat.jpg" alt="Heat" width="224" height="128", style="display:none;">
+      <img id="sign" src="Data\sign.jpg" alt="Caution Sign" width="224" height="128", style="display:none;">
+      <img id="sun" src="Data\sun.jpg" alt="Sun" width="224" height="128", style="display:none;">
+      <img id="gun" src="Data\gun.jpg" alt="Sun" width="224" height="128", style="display:none;">
+      <img id="bluntforce" src="Data\bluntforce.jpg" alt="Sun" width="224" height="128", style="display:none;">
+      </div>
+      <!-- <p style="font-size: 20px; color:#1F9AFE;">
+      </p> -->
+
+      <!--Chart-->
+
+      <!-- <div class='content'>
+           <div class="plot-content">
+             <canvas id="myChartBar"></canvas>
+           </div> -->
+
+      <div class="legend">
+        <h2> Causes of Death </h2>
+          <button id="exposureButton">Exposure</button>
+          <button id="skeletalButton">Skeletal Remains</button>
+          <button id="bluntforceButton">Blunt Force Injury</button>
+          <button id="gunshotButton">Gunshot Wound</button>
+      </div>
+      <!-- buttons -->
+      <div class="navButton">
+        <button id="previousButton" style="display: none;">previous</button>
+        <button id="nextButton">next</button>
+      </div>
+    </div>
+    <!-- <p id="credit">Austin L. Wheat: MUSA 611, Spring 2022 <br> University of Pennsylvania</p> -->
+    <!-- Map -->
+    <!--
+    <div id="map" class="map"></div>
+    -->
+    <div class="map" id="map"></div>
+    <!-- Javascript Imports -->
+    <script src="Data/azdeaths.js"></script>
+
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/midtermFunctions.js"></script>
+    <script src="js/slideModel.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
